@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- — корректно отображает символы на всех языках. -->
+    <meta charset="UTF-8">
+    <!-- адаптирует страницу для мобильных устройств. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color flipper</title>
+
+    <style>
+        #green{
+            background-color: green;
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+
+        button{
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+     <h3>Color flipper</h3>
+     <button id="green" onclick="setColor('green')">Green</button>
+     <button id="red" onclick="setColor('red')">Red</button>
+     <button id="blue" onclick="setColor('blue')">Blue</button>
+     <button onclick="randomColor()">Random</button>
+
+     <script src="main.js"></script>
+</body>
+</html>
